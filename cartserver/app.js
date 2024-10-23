@@ -20,8 +20,8 @@ app.use(cors(
 app.use(bodyParser.json());
 
 // Routes
-app.use('/api/products', productRoutes);
-app.use('/api/cart', cartRoutes);
+app.use('new-repo-host.vercel.app/api/products', productRoutes);
+app.use('new-repo-host.vercel.app/api/cart', cartRoutes);
 
 // MongoDB Connection
 mongoose.connect('mongodb+srv://divyaas340:WBLJq67LxK9UIpdj@cluster0.tfngn.mongodb.net/')
