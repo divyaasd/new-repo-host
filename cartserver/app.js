@@ -6,7 +6,9 @@ const productRoutes = require('./routes/productRoute');
 const cartRoutes = require('./routes/cartRoute');
 
 const app = express();
-
+app.get("/",(req,res)=>{
+    res.send("Welcome")
+})
 // Middleware
 app.use(cors(
     {
