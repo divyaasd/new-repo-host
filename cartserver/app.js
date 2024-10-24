@@ -12,7 +12,7 @@ app.get("/",(req,res)=>{
 // Middleware
 app.use(cors(
     {
-        origin: 'https://your-frontend-domain.vercel.app', // Replace with your React app's Vercel URL
+        origin: 'new-repo-host-uk4h.vercel.app', // Replace with your React app's Vercel URL
         methods: ['GET', 'POST', 'PUT', 'DELETE'],         
         credentials: true                                  
       }
@@ -20,8 +20,8 @@ app.use(cors(
 app.use(bodyParser.json());
 
 // Routes
-app.use('new-repo-host.vercel.app/api/products', productRoutes);
-app.use('new-repo-host.vercel.app/api/cart', cartRoutes);
+app.use('/api/products', productRoutes);
+app.use('/api/cart', cartRoutes);
 
 // MongoDB Connection
 mongoose.connect('mongodb+srv://divyaas340:WBLJq67LxK9UIpdj@cluster0.tfngn.mongodb.net/')
