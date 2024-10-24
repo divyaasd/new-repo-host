@@ -15,5 +15,14 @@
           "src":"/test",
           "dest":"/"
          }
-       ]
+       ],
+   
+        "rewrites": [
+          {
+            "source": "/(.*)",
+            "destination": "/index.html"
+          }
+        ]
+      
+      
     }
